@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+.poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+#home, #about, #contact {
+    max-width: 100%;
+    height: fit-content;
+    padding: 50px 100px;
+    background-color: #ffd700;
+    display: flex;
+    padding: 160px 80px;
+    position: relative;
+    overflow: hidden;
+
+}
+section#about {
+    flex-direction: column;
+}
+
+.kotakSatu{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+
+}
+
+.isiKotakSatu {
+    height: 400px;
+    width: 100%;
+}
+.kotakDua{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+#contact .kotakSatu {
+    justify-content: start;
+    align-items: start;
+    flex-direction: row;
+}
+
+#contact .isiKotakSatu {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: fit-content;
+}
+
+#contact .kotakDua {
+    flex-direction: column;
+align-items: start;
+justify-content: start;
+    gap:20px;
+    padding: 0px 20px;
+}
+
+.scale{
+    transition: all ease-in-out 500ms;
+    font-size: medium;
+}
+
+.scale:hover {
+    font-weight: 700;
+    font-size: large;
+}
+
+.instagram {
+    padding: 10px 20px;
+    width: fit-content;
+    border: 2px solid white;
+    border-radius: 5px;
+    background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+  text-decoration: none;
+  color: white;
+  transition: all ease-in-out 500ms;
+}
+
+.youtube {
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+    width: fit-content;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+}
+
+.buttonDiscover {
+    margin-top: 60px;
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px solid black;
+    font-weight: 600;
+    gap: 4px;
+    overflow-x: hidden;
+}
+
+.buttonDiscover span {
+    transition: all ease-in-out 500ms;
+}
+
+.buttonDiscover:hover span {
+    transform: translateX(80%);
+}
+
+
+.rocketIcon{
+    transform: rotate(40deg);
+    transition: all ease-in-out 500ms;
+}
+
+.buttonDiscover:hover .rocketIcon {
+    transform: rotate(90deg) translateY(-100%) ;
+    animation: naikTurun 2s infinite linear;
+}
+
+@keyframes naikTurun {
+    0% {
+        transform: rotate(90deg) translateY(-100%)  translateX(-20%);
+    }
+    25% {
+        transform: rotate(90deg) translateY(-100%)  translateX(20%);
+    }
+    50% {
+        transform: rotate(90deg) translateY(-100%)  translateX(-20%);
+    }
+    75% {
+        transform: rotate(90deg) translateY(-100%)  translateX(20%);
+    }
+    100%{
+        transform: rotate(90deg) translateY(-100%)  translateX(-20%);
+    }
+   
+}
+
+
+.isiTextAbout {
+    width: calc(100% - 320px);
+    display: flex;
+    gap:10px;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px 0px 0px 40px;
+    height: 100%;
+}
+
+.buttonCV{
+    transition: all ease-in-out 500ms;
+}
+
+.buttonCV:hover {
+    transform: scale(95%);
+}
+
+.techStack {
+    display: flex;
+
+    gap: 10px;
+    flex-wrap: wrap;
+    width: 100%;
+    height: fit-content;
+}
+
+.kotakTechStack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    gap: 10px;
+    width: 150px;
+    height: 100%;
+    border-radius: 10px;
+    background-color: grey;
+}
